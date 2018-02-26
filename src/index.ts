@@ -1,4 +1,5 @@
 const nodeFetch = require("node-fetch");
+require("dotenv").config(); // Loads environment variables from .env file
 const argv = require("yargs").argv;
 const apiKey = process.env.APIKEY;
 const city = argv.c || "Helsinki";
